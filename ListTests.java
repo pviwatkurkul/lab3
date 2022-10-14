@@ -40,14 +40,14 @@ public class ListTests {
         input.add("dog");
         input.add("cow");
         input.add("lamb");
-        test.add("sand");
-        test.add("train");
-        test.add("scarf");
-        test.add("puke");
         test.add("cat");
-        test.add("dog");
         test.add("cow");
+        test.add("dog");
         test.add("lamb");
+        test.add("puke");
+        test.add("sand");
+        test.add("scarf");
+        test.add("train");
 
         assertArrayEquals(test.toArray(), ListExamples.merge(input2, input).toArray());
 
