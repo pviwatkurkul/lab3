@@ -14,14 +14,14 @@ public class ListTests {
     public void testFilter(){
         List<String> input = new ArrayList<>();
         List<String> test = new ArrayList<>();
-        input.add("cat");
-        input.add("dog");
-        input.add("cow");
-        input.add("lamb");
-        test.add("cat");
-        test.add("dog");
-        test.add("cow");
-        test.add("lamb");
+        input.add("a");
+        input.add("b");
+        input.add("c");
+        input.add("d");
+        test.add("a");
+        test.add("b");
+        test.add("c");
+        test.add("d");
 
         assertArrayEquals(input.toArray(), ListExamples.filter(input, new check()).toArray());
 
@@ -32,22 +32,21 @@ public class ListTests {
         List<String> input2 = new ArrayList<>();
 
         List<String> test = new ArrayList<>();
-        input2.add("sand");
-        input2.add("train");
-        input2.add("scarf");
-        input2.add("puke");
-        input.add("cat");
-        input.add("dog");
-        input.add("cow");
-        input.add("lamb");
-        test.add("cat");
-        test.add("cow");
-        test.add("dog");
-        test.add("lamb");
-        test.add("puke");
-        test.add("sand");
-        test.add("scarf");
-        test.add("train");
+        input.add("a");
+        input.add("d");
+        input.add("e");
+        input.add("f");
+        input2.add("m");
+        input2.add("g");
+        input2.add("o");
+       
+        test.add("a");
+        test.add("d");
+        test.add("e");
+        test.add("f");
+        test.add("g");
+        test.add("m");
+        test.add("o");
 
         assertArrayEquals(test.toArray(), ListExamples.merge(input2, input).toArray());
 
